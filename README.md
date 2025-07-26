@@ -50,11 +50,11 @@ This tool performs automatic skin smoothing and blemish removal on facial images
 Clone the repository and build all projects in one step:
 
 ```bash
-https://github.com/sancho11/skin_smoothing.git
+git clone https://github.com/sancho11/skin_smoothing.git
 cd skin_smoothing
 mkdir build && cd build
 cmake ..
-make -j$(nproc)
+make
 ```
 
 Executable will be placed in the bin directory `build/bin/skin_smoothing`.
@@ -100,6 +100,6 @@ This project automates skin smoothing and blemish removal using advanced techniq
 
 * Bilateral Smoothing
    Applies edge-preserving smoothing using a bilateral filter. This reduces uneven skin texture without blurring facial features or contours.
-   
+
 * Seamless Image Composition
    The smoothed and corrected region is blended back into the original image using seamless cloning, ensuring a natural and artifact-free appearance.
